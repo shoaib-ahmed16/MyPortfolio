@@ -623,10 +623,19 @@ img{
     padding: 0 1.5rem;
 }
 .portfolio__img{
+    cursor: pointer;
     width: 265px;
-    height: 10%;
+    height: 90%;
     border-radius: .5rem;
     justify-self: center;
+}
+
+.portfolio__img:hover{
+    cursor: pointer;
+    -webkit-transition-delay:var(--mb-0-25);
+    transition-delay: var(--mb-0-25);
+    -webkit-transform: scale(2);
+    transform: scale(2);
 }
 .portfolio__title{
     font-size: var(--h3-font-size);
