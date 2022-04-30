@@ -631,6 +631,8 @@ img{
 }
 
 .portfolio__img:hover{
+    z-index: 20;
+    position: relative;
     cursor: pointer;
     -webkit-transition-delay:var(--mb-0-25);
     transition-delay: var(--mb-0-25);
