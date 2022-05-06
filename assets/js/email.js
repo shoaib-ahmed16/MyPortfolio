@@ -52,7 +52,7 @@
         console.log(dataString, typeof dataString)
 
         let res = await fetch(
-          'http://127.0.0.1:5500/https://emailsmtpserver.herokuapp.com/shoaib',
+          'http://127.0.0.1:5500/emailsmtpserver.herokuapp.com/shoaib',
           {
             mode: 'no-cors',
             method: 'POST',
