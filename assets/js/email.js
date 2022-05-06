@@ -47,16 +47,21 @@
           subject: document.getElementById('subject_mail').value,
           text: document.getElementById('message_text').value,
         }
-        // let dataString = JSON.Str(data)
+        let dataString = JSON.stringify(data)
         console.log(data, typeof data)
-        let res = await fetch('https://emailsmtpserver.herokuapp.com/shoaib', {
-          mode: 'no-cors',
-          method: 'POST',
-          body: data,
-          headers: {
-            'content-Type': 'application/json',
-          },
-        })
+        console.log(dataString, typeof dataString)
+
+        let res = await fetch(
+          'http://127.0.0.1:5500/https://emailsmtpserver.herokuapp.com/shoaib',
+          {
+            mode: 'no-cors',
+            method: 'POST',
+            body: dataString,
+            headers: {
+              'content-Type': 'application/json',
+            },
+          }
+        )
         let data1 = await res.json()
         console.log({ data: data1 })
       } catch (error) {
