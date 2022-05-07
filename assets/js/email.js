@@ -51,17 +51,14 @@
         console.log(data, typeof data)
         console.log(dataString, typeof dataString)
 
-        let res = await fetch(
-          'http://localhost:3000/emailsmtpserver.herokuapp.com/shoaib',
-          {
-            mode: 'no-cors',
-            method: 'POST',
-            body: dataString,
-            headers: {
-              'content-Type': 'application/json',
-            },
-          }
-        )
+        let res = await fetch('', {
+          mode: 'no-cors',
+          method: 'POST',
+          body: dataString,
+          headers: {
+            'content-Type': 'application/json',
+          },
+        })
         let data1 = await res.json()
         console.log({ data: data1 })
       } catch (error) {
