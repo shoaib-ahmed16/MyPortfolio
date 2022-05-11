@@ -617,33 +617,30 @@
               </div>
             </div>
           </div>
-          <form action="" class="contact__form grid">
-            <div class="contact__inputs grid">
-              <div class="contact__content">
+          <form id="form" action="" class="contact__form grid">
+            <label class="contact__inputs grid">
+              <label class="contact__content">
                 <label for="" class="contact__label">Name</label>
                 <input id="form_name" type="text" class="contact__input" />
-              </div>
-              <div class="contact__content">
+              </label>
+              <label class="contact__content">
                 <label for="" class="contact__label">Email</label>
                 <input id="form_email" type="email" class="contact__input" />
-              </div>
-              <div class="contact__content">
+              </label>
+              <label class="contact__content">
                 <label for="" class="contact__label">Subject</label>
-                <input id="subject_mail" type="email" class="contact__input" />
-              </div>
-              <div class="contact__content">
+                <input id="subject_mail" type="text" class="contact__input" />
+              </label>
+              <label class="contact__content">
                 <label for="" class="contact__label">Message</label>
                 <textarea id="message_text" name="" id="" cols="" rows="4" class="contact__input">
                 </textarea>
-              </div>
-              <div id="send_message_click">
-                <a href="#" class="button button--flex">
-                  Send Message
-                  <i class="uil uil-message button__icon"></i>
-                </a>
-              </div>
-            </div>
-          </form>
+              </label>
+              <label id="send_message_click">
+                  <input id="submit_message" type="submit" placeholder="Send Message" value="Send Message">
+              </label>
+            </label>
+          </form> 
         </div>
       </section>
     </main>

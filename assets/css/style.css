@@ -428,7 +428,31 @@ img{
     display: inline-flex;
     align-items: center;
 }
-
+#submit_message
+{
+    width: 40%;
+    height: 50px;
+    border-radius: 10px;
+    border:1px solid transparent;
+    font-size: 18px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background-color: var(--first-color);
+    color: #FFF;
+    font-weight: var(--font-medium);
+     -webkit-transition-delay:var(--mb-0-25);
+    transition-delay: var(--mb-0-25);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+#submit_message:hover{
+    border:1px solid steelblue;
+    background-color: var(--first-color-alt);
+     -webkit-transition-delay:var(--mb-0-25);
+    transition-delay: var(--mb-0-25);
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 /*==================== ABOUT ====================*/
 .about__img{
     width: 200px;
